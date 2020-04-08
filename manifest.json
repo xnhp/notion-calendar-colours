@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "modify-page",
+    "version": "1.0",
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "notion-calendar-colors@moserbenj"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.notion.so/*"],
+            "js": [
+                "zepto.min.js",
+                "content.js"
+            ]
+        }
+    ]
+
+}
